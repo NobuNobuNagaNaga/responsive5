@@ -1,0 +1,231 @@
+@charset "UTF-8";
+* {
+  text-align: center;
+  text-decoration: none;
+  font-family: "游ゴシック体","Yu Gothic";
+}
+
+main div.top {
+  position: relative;
+  height: 300px;
+  background-image: url("../images/配管BOX.png");
+  background-size: 100% 100%;
+  background-size: cover;
+  background-position: 0px;
+  background-repeat: no-repeat;
+}
+
+main div.top div.topBG {
+  background-color: rgba(32, 48, 50, 0.5);
+  height: 100%;
+}
+
+main div.top div.topBG img {
+  display: flex;
+  padding-left: 10.5%;
+  padding-top: 1%;
+  height: 53px;
+}
+
+main div.top div.topBG div.top-wrap h1 {
+  position: relative;
+  top: 106.5px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.68;
+  color: white;
+}
+
+main div.contact-form {
+  margin-top: 80px;
+  height: auto;
+  /* Chrome */
+  /* Firefox */
+  /* IE */
+  height: 893px;
+}
+
+main div.contact-form ::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.68;
+  letter-spacing: 1.6px;
+  color: rgba(37, 52, 54, 0.15);
+  position: relative;
+  left: 20px;
+}
+
+main div.contact-form ::-moz-placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.68;
+  letter-spacing: 1.6px;
+  color: rgba(37, 52, 54, 0.15);
+  position: relative;
+  left: 20px;
+}
+
+main div.contact-form :-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.68;
+  letter-spacing: 1.6px;
+  color: rgba(37, 52, 54, 0.15);
+  position: relative;
+  left: 20px;
+}
+
+main div.contact-form div.contact-form-wrap form {
+  display: flex;
+  flex-direction: column;
+  /*============================
+        #comment
+        ============================*/
+}
+
+main div.contact-form div.contact-form-wrap form label {
+  color: #253436;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.68;
+  letter-spacing: 1.6px;
+  text-align: left;
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  main div.contact-form div.contact-form-wrap form label {
+    width: 100%;
+  }
+}
+
+main div.contact-form div.contact-form-wrap form input {
+  border: 1px dotted #253436;
+  border-radius: 5px;
+  text-align: left;
+  display: inline-block;
+  width: 600px;
+  margin: 0 auto;
+  height: 48px;
+}
+
+@media screen and (max-width: 600px) {
+  main div.contact-form div.contact-form-wrap form input {
+    width: 96%;
+  }
+}
+
+main div.contact-form div.contact-form-wrap form textarea#comment {
+  border: 1px dotted #253436;
+  border-radius: 5px;
+  display: inline-block;
+  width: 600px;
+  height: 240px;
+  margin: 0 auto;
+  resize: none;
+  text-align: left;
+  max-width: 600px;
+  max-height: 240px;
+}
+
+@media screen and (max-width: 600px) {
+  main div.contact-form div.contact-form-wrap form textarea#comment {
+    width: 96%;
+  }
+}
+
+main div.contact-form div.contact-form-wrap form .submit-button {
+  background-color: #253436;
+  width: 260px;
+  height: 50px;
+  border-radius: 0;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  line-height: 1.68;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+main div.contact-form div.contact-form-wrap form .submit-button:hover {
+  background-color: #008700;
+}
+
+footer div.footer-wrap {
+  height: 169px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+footer div.footer-wrap div.company-logo img {
+  padding-left: 115px;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap div.company-logo img {
+    padding: 0;
+    margin-left: 30px;
+    width: 90%;
+  }
+}
+
+footer div.footer-wrap div.company-logo p {
+  color: #1e2d2f;
+  margin-left: 75px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap div.company-logo p {
+    margin: 0;
+  }
+}
+
+footer div.footer-wrap nav {
+  display: none;
+  margin-left: 66px;
+  width: 100%;
+  margin-right: 115px;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap nav {
+    display: none;
+  }
+}
+
+footer div.footer-wrap nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div.footer-wrap nav ul li {
+  display: inline-block;
+}
+
+footer div.footer-wrap nav ul li a {
+  color: #1e2d2f;
+}
+
+footer div.copyright {
+  border-top: 1px dotted #000;
+  height: 33px;
+}
+
+footer div.copyright p {
+  line-height: 33px;
+  font-size: 12px;
+  font-family: serif;
+  font-weight: normal;
+}

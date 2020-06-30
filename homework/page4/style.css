@@ -1,0 +1,485 @@
+@charset "UTF-8";
+* {
+  text-align: center;
+  text-decoration: none;
+  font-family: "游ゴシック体","Yu Gothic";
+}
+
+* h3 {
+  color: #253436;
+  font-size: 32px;
+  line-height: 1.68;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header div.header-wrap {
+  position: relative;
+  z-index: 100;
+  width: 1050px;
+  margin: 0 auto;
+  background-color: rgba(37, 52, 54, 0.9);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+  header div.header-wrap {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+header div.header-wrap img {
+  justify-content: flex-start;
+  position: relative;
+  top: -3px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+  header div.header-wrap img {
+    margin-left: 0;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header div.header-wrap img {
+    display: flex;
+  }
+}
+
+header div.header-wrap nav {
+  height: 100%;
+  position: relative;
+  left: 122px;
+}
+
+@media screen and (max-width: 1050px) {
+  header div.header-wrap nav {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header div.header-wrap nav {
+    display: none;
+  }
+}
+
+header div.header-wrap nav ul li {
+  display: inline-block;
+}
+
+header div.header-wrap nav ul li a {
+  line-height: 70px;
+  padding: 15px 0;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 25.31px;
+  font-size: 14px;
+}
+
+header div.header-wrap nav ul li .company-summary-button {
+  color: #008700;
+}
+
+header div.header-wrap nav ul li .company-summary-button::after {
+  content: "";
+  position: absolute;
+  left: 280px;
+  bottom: 0;
+  border-bottom: 10px solid #008700;
+  width: 96px;
+}
+
+header div.header-wrap nav ul li .contact-button {
+  background-color: #ff6200;
+  padding: 24px 30px 25px 25px;
+}
+
+header div.header-wrap nav ul li .contact-button:hover {
+  background-color: #ffffff;
+  color: #ff6200;
+}
+
+header div.header-wrap nav ul li .contact-button i {
+  margin-left: 12px;
+}
+
+main div.top {
+  position: relative;
+  top: -70px;
+  height: 300px;
+  background-image: url("../images/配管BOX.png");
+  background-size: cover;
+}
+
+main div.top div.topBG {
+  background-color: rgba(32, 48, 50, 0.5);
+  height: 100%;
+}
+
+main div.top div.topBG div.top-wrap h1 {
+  position: relative;
+  top: 170px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.68;
+  color: white;
+}
+
+main div.company-summary-summary {
+  height: auto;
+  display: block;
+  position: relative;
+  top: -70px;
+}
+
+@media screen and (max-width: 242px) {
+  main div.company-summary-summary {
+    height: auto;
+  }
+}
+
+main div.company-summary-summary div.company-summary-summary-wrap h2 {
+  font-size: 32px;
+  line-height: 1.68;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 960px) {
+  main div.company-summary-summary div.company-summary-summary-wrap h2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+}
+
+main div.company-summary-summary div.company-summary-summary-wrap p {
+  font-size: 16px;
+  line-height: 1.68;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 960px) {
+  main div.company-summary-summary div.company-summary-summary-wrap p {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+main div.greeting div.greeting-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+main div.greeting div.greeting-wrap div.text-wrap {
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 950px) {
+  main div.greeting div.greeting-wrap div.text-wrap {
+    margin-right: 0;
+  }
+}
+
+main div.greeting div.greeting-wrap div.text-wrap h2 {
+  color: #253436;
+  font-size: 24px;
+  line-height: 1.70;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 45px;
+}
+
+main div.greeting div.greeting-wrap div.text-wrap h2 span {
+  border-bottom: 3px solid #008700;
+  padding-bottom: 20px;
+}
+
+main div.greeting div.greeting-wrap div.text-wrap p {
+  width: 500px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.68;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  main div.greeting div.greeting-wrap div.text-wrap p {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+}
+
+main div.greeting div.greeting-wrap div.text-wrap div.name {
+  margin-top: 33px;
+}
+
+main div.greeting div.greeting-wrap div.text-wrap div.name h3 {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 510px) {
+  main div.greeting div.greeting-wrap div.text-wrap div.name h3 {
+    position: relative;
+    right: 20px;
+  }
+}
+
+main div.greeting div.greeting-wrap div.text-wrap div.name p {
+  text-align: right;
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: bold;
+}
+
+main div.greeting div.greeting-wrap img {
+  width: 350px;
+  height: 467px;
+}
+
+@media screen and (max-width: 950px) {
+  main div.greeting div.greeting-wrap img {
+    display: none;
+  }
+}
+
+main div.company-summary-detail div.company-summary-detail-wrap {
+  margin-top: 113px;
+}
+
+main div.company-summary-detail div.company-summary-detail-wrap h2 {
+  font-size: 32px;
+  line-height: 1.68;
+  letter-spacing: 3.2px;
+  margin-bottom: 40px;
+}
+
+main div.company-summary-detail div.company-summary-detail-wrap div.company-information div.company-information-wrap p {
+  text-align: left;
+  width: 950px;
+  margin: 0 auto;
+  border-top: 1px dotted #253436;
+  margin: 0 auto;
+  margin-bottom: 24.5px;
+  padding-top: 24.5px;
+}
+
+@media screen and (max-width: 950px) {
+  main div.company-summary-detail div.company-summary-detail-wrap div.company-information div.company-information-wrap p {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+  }
+}
+
+main div.company-summary-detail div.company-summary-detail-wrap div.company-information div.company-information-wrap p span {
+  margin-left: 38px;
+  font-size: 16px;
+  line-height: 1.68;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  color: #253436;
+  width: 184px;
+  display: inline-block;
+  text-align: left;
+}
+
+@media screen and (max-width: 950px) {
+  main div.company-summary-detail div.company-summary-detail-wrap div.company-information div.company-information-wrap p span {
+    position: relative;
+    bottom: 10px;
+    width: 100px;
+    display: block;
+    right: 37px;
+  }
+}
+
+main div.company-summary-detail div.company-summary-detail-wrap div.company-information div.company-information-wrap div.dummy-span {
+  height: 27px;
+  position: relative;
+  bottom: 13px;
+}
+
+@media screen and (max-width: 950px) {
+  main div.company-summary-detail div.company-summary-detail-wrap div.company-information div.company-information-wrap div.dummy-span {
+    display: flex;
+  }
+}
+
+main div.company-summary-detail div.company-summary-detail-wrap div.company-information div.company-information-wrap div.google-map iframe {
+  width: 950px;
+  margin-bottom: 160px;
+  height: 250px;
+}
+
+@media screen and (max-width: 950px) {
+  main div.company-summary-detail div.company-summary-detail-wrap div.company-information div.company-information-wrap div.google-map iframe {
+    width: 100%;
+  }
+}
+
+main div.contact {
+  background-image: url("../images/フッターCTA_背景@.png");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  height: 312px;
+}
+
+@media screen and (max-width: 451px) {
+  main div.contact {
+    height: 400px;
+  }
+}
+
+main div.contact div.contactBG {
+  background-color: rgba(29, 37, 41, 0.9);
+  background-size: cover;
+  width: 480px;
+  height: 80%;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+  top: 30px;
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  main div.contact div.contactBG {
+    width: 100%;
+  }
+}
+
+main div.contact div.contactBG div.contact-wrap {
+  height: auto;
+  align-items: center;
+  position: relative;
+}
+
+main div.contact div.contactBG div.contact-wrap h2 {
+  font-family: "游ゴシック体","Yu Gothic";
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+@media screen and (max-width: 362px) {
+  main div.contact div.contactBG div.contact-wrap h2 {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+main div.contact div.contactBG div.contact-wrap p {
+  line-height: 27px;
+  width: 81.87%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "游ゴシック体","Yu Gothic";
+  color: white;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+main div.contact div.contactBG div.contact-wrap a.contact-button {
+  font-family: "游ゴシック体","Yu Gothic";
+  background-color: #FF6200;
+  color: #FFFFFF;
+  padding: 17.35px 70px 16.65px 68px;
+}
+
+main div.contact div.contactBG div.contact-wrap a.contact-button:hover {
+  background-color: #ffffff;
+  color: #ff6200;
+}
+
+main div.contact div.contactBG div.contact-wrap a.contact-button i {
+  margin-left: 13px;
+}
+
+footer div.footer-wrap {
+  height: 169px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+footer div.footer-wrap div.company-logo img {
+  padding-left: 115px;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap div.company-logo img {
+    padding: 0;
+    margin-left: 30px;
+    width: 90%;
+  }
+}
+
+footer div.footer-wrap div.company-logo p {
+  color: #1e2d2f;
+  margin-left: 75px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap div.company-logo p {
+    margin: 0;
+  }
+}
+
+footer div.footer-wrap nav {
+  margin-left: 66px;
+  width: 100%;
+  margin-right: 115px;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap nav {
+    display: none;
+  }
+}
+
+footer div.footer-wrap nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div.footer-wrap nav ul li {
+  display: inline-block;
+}
+
+footer div.footer-wrap nav ul li a {
+  color: #1e2d2f;
+}
+
+footer div.copyright {
+  border-top: 1px dotted #000;
+  height: 33px;
+}
+
+footer div.copyright p {
+  line-height: 33px;
+  font-size: 12px;
+  font-family: serif;
+  font-weight: normal;
+}

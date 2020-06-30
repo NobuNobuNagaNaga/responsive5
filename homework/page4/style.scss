@@ -1,0 +1,391 @@
+*{
+  text-align: center;
+  text-decoration: none;
+	font-family: "游ゴシック体","Yu Gothic";
+  h3{
+    color: #253436;
+    font-size: 32px;
+    line-height: 1.68;
+  }
+}
+header {
+	display: flex;
+	justify-content: center;
+	div.header-wrap {
+		position: relative;
+		z-index: 100;
+		width: 1050px;
+		margin: 0 auto;
+		background-color: rgba(37, 52, 54, 0.9);
+		height: 70px;
+		display: flex;
+		align-items: center;
+		@media screen and (max-width:1050px){
+			width: 100%;
+			justify-content: center;
+		}
+		img {
+			justify-content:flex-start;
+			position: relative;
+			top: -3px;
+			margin-left: 20px;
+			@media screen and (max-width:1050px){
+				margin-left: 0;
+				display: none;
+			}
+			@media screen and (max-width:770px){
+				display: flex;
+			}
+		}
+		nav {
+			height: 100%;
+      position: relative;
+      left: 122px;
+			@media screen and (max-width:1050px){
+				// display: none;
+				right: 0;
+			}
+			@media screen and (max-width:770px){
+				display: none;
+			}
+			ul {
+				li {
+					display: inline-block;
+					a {
+						line-height: 70px;
+						padding: 15px 0;
+						color: #FFFFFF;
+						text-decoration: none;
+						margin-left: 25.31px;
+						font-size: 14px;
+					}
+					.company-summary-button{
+						color: #008700; 
+						&::after{
+							content: "";
+							position: absolute;
+							left: 280px;
+							bottom: 0;
+							border-bottom: 10px solid #008700;
+							width: 96px;
+						}
+					}
+					.contact-button{
+						background-color: rgba(255, 98, 0, 1);
+						padding: 24px 30px 25px 25px;
+						&:hover{
+							background-color: #ffffff;
+							color: rgba(255, 98, 0, 1);
+						}
+						i{
+							margin-left: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+main {
+	div.top{
+    position: relative;
+    top: -70px;
+    height: 300px;
+    background-image: url("../images/配管BOX.png");
+    background-size: cover;
+    div.topBG{
+      background-color: rgba(32, 48, 50, 0.5);
+      height: 100%;
+      div.top-wrap{
+        h1{
+          position: relative;
+          top: 170px;
+          font-size: 32px;
+          font-weight: bold;
+          line-height: 1.68;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+	div.company-summary-summary {
+    height: auto;
+    display: block;
+    position: relative;
+    top: -70px;
+    @media screen and (max-width:242px){
+      height: auto;
+    }
+		div.company-summary-summary-wrap {
+			h2 {
+        font-size: 32px;
+        line-height: 1.68;
+        margin-top: 80px;
+        @media screen and (max-width:960px){
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 80px;
+        }
+			}
+			p {
+        font-size: 16px;
+        line-height: 1.68;
+        margin-top: 50px;
+        @media screen and (max-width:960px){
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 50px;
+        }
+			}
+		}
+	}
+	div.greeting {
+    div.greeting-wrap {
+      display: flex;
+      justify-content: center;
+			div.text-wrap {
+        margin-right: 100px;
+        @media screen and (max-width:950px){
+          margin-right: 0;
+        }
+        h2 {
+          span{
+            border-bottom: 3px solid #008700;
+            padding-bottom: 20px;
+          }
+          color: #253436;
+          font-size: 24px;
+          line-height: 1.70;
+          font-weight: bold;
+          text-align: left;
+          margin-bottom: 45px;
+				}
+				p {
+          width: 500px;
+          text-align: left;
+          font-size: 16px;
+          line-height: 1.68;
+          margin-bottom: 10px;
+          @media screen and (max-width:500px){
+            width: 90%;
+            margin: 0 auto;
+            height: auto;
+          }
+        }
+				div.name {
+          margin-top: 33px;
+					h3 {
+            text-align: right;
+            margin-bottom: 5px;
+            @media screen and (max-width:510px){
+              position: relative;
+              right: 20px;
+            }
+					}
+					p {
+            text-align: right;
+            font-size: 20px;
+            line-height: 1.7;
+            font-weight: bold;
+					}
+				}
+			}
+			img {
+        width: 350px;
+        height: 467px;
+        @media screen and (max-width:950px){
+          display: none;
+        }
+			}
+		}
+	}
+	div.company-summary-detail {
+		div.company-summary-detail-wrap {
+      margin-top: 113px;
+			h2 {
+        font-size: 32px;
+        line-height: 1.68;
+        letter-spacing: 3.2px;
+        margin-bottom: 40px;
+			}
+			div.company-information {
+				div.company-information-wrap {
+          p {
+            text-align: left;
+            width: 950px;
+            margin: 0 auto;
+            border-top: 1px dotted #253436;
+            margin: 0 auto;
+            margin-bottom: 24.5px;
+            padding-top: 24.5px;
+            @media screen and (max-width:950px){
+              width: 100%;
+              position: relative;
+              display: inline-block;
+              // right: 150px;
+            }
+						span {
+              margin-left: 38px;
+              font-size: 16px;
+              line-height: 1.68;
+              font-weight: bold;
+              letter-spacing: 1.6px;
+              color: #253436;
+              width: 184px;
+              display: inline-block;
+              text-align: left;
+              @media screen and (max-width:950px){
+                position: relative;
+                bottom: 10px;
+                width: 100px;
+                display: block;
+                right:37px;
+              }
+						}
+					}
+          div.dummy-span{
+            height: 27px;
+            position: relative;
+            bottom: 13px;
+            @media screen and (max-width:950px){
+              display: flex;
+            }
+          }
+					div.google-map {
+						iframe {
+              width: 950px;
+              margin-bottom: 160px;
+              height: 250px;
+              @media screen and (max-width:950px){
+                width: 100%;
+              }
+						}
+					}
+				}
+			}
+		}
+	}
+  div.contact {
+    background-image: url("../images/フッターCTA_背景@.png");
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    height: 312px;
+    @media screen and (max-width:451px){
+      height: 400px;
+    }
+    div.contactBG{
+      background-color: rgba(29, 37, 41, 0.9);
+      background-size: cover;
+      width: 480px;
+      height: 80%;
+      margin: 0 auto;
+      align-items: center;
+      position: relative;
+      top: 30px;
+      @media screen and (max-width:480px){
+        width: 100%;
+      }
+      display: flex;
+      div.contact-wrap {
+        height: auto;
+        align-items: center;
+        position: relative;
+        // top: 32px;
+        h2 {
+          font-family:  "游ゴシック体","Yu Gothic";
+          font-weight: bold;
+          font-size: 24px;
+          color: rgba(255, 255, 255, 1);
+          @media screen and (max-width:362px){
+            width: 70%;
+            margin: 0 auto;
+          }
+        }
+        p {
+          line-height: 27px;
+          width: 81.87%;
+          margin: 0 auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          font-family:  "游ゴシック体","Yu Gothic";
+          color: rgba(255, 255, 255, 1);
+          font-size: 16px;
+          margin-bottom: 40px;
+        }
+        a.contact-button {
+          font-family:  "游ゴシック体","Yu Gothic";
+          background-color: #FF6200;
+          color: #FFFFFF;
+          padding: 17.35px 70px 16.65px 68px;
+          &:hover{
+          background-color: #ffffff;
+          color: rgba(255, 98, 0, 1);
+        }
+          i{
+            margin-left: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  div.footer-wrap {
+    height: 169px;
+    display: flex;
+    align-items: center;
+      @media screen and(max-width:1215px){
+        display: flex;
+        justify-content: center;
+      }
+      div.company-logo {
+      img {
+        padding-left: 115px;
+        @media screen and(max-width:1215px){
+          padding: 0;
+          margin-left: 30px;
+          width: 90%;
+        }
+      }
+      p {
+        color: rgba(30, 45, 47, 1);
+        margin-left: 75px;
+        line-height: 24px;
+        font-size: 14px;
+        @media screen and(max-width:1215px){
+          margin: 0;
+        }
+      }
+    }
+    nav {
+      margin-left: 66px;
+      width: 100%;
+      margin-right: 115px;
+      @media screen and (max-width:1215px){
+        display: none;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          // margin-right: 40px;
+          display: inline-block;
+          a {
+            color: rgba(30, 45, 47, 1);
+          }
+        }
+      }
+    }
+  }
+  div.copyright {
+    border-top: 1px dotted #000;
+    height: 33px;
+    p {
+      line-height: 33px;
+      font-size: 12px;
+      font-family: serif;
+      font-weight: normal;
+    }
+  }
+}

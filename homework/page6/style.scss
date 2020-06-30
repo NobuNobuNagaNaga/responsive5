@@ -1,0 +1,382 @@
+*{
+  text-align: center;
+  text-decoration: none;
+	font-family: "游ゴシック体","Yu Gothic";
+}
+header {
+	display: flex;
+	justify-content: center;
+	div.header-wrap {
+		position: relative;
+		z-index: 100;
+		width: 1050px;
+		margin: 0 auto;
+		background-color: rgba(37, 52, 54, 0.9);
+		height: 70px;
+		display: flex;
+		align-items: center;
+		@media screen and (max-width:1050px){
+			width: 100%;
+			justify-content: center;
+		}
+		img {
+			justify-content:flex-start;
+			position: relative;
+			top: -3px;
+			margin-left: 20px;
+			@media screen and (max-width:1050px){
+				margin-left: 0;
+				display: none;
+			}
+			@media screen and (max-width:770px){
+				display: flex;
+			}
+		}
+		nav {
+			height: 100%;
+      position: relative;
+      left: 122px;
+			@media screen and (max-width:1050px){
+				// display: none;
+				right: 0;
+			}
+			@media screen and (max-width:770px){
+				display: none;
+			}
+			ul {
+				li {
+					display: inline-block;
+					a {
+						line-height: 70px;
+						padding: 15px 0;
+						color: #FFFFFF;
+						text-decoration: none;
+						margin-left: 25.31px;
+						font-size: 14px;
+					}
+					.information-button{
+						color: #008700; 
+						&::after{
+							content: "";
+							position: absolute;
+							left: 366px;
+							bottom: 0;
+							border-bottom: 10px solid #008700;
+							width: 96px;
+						}
+					}
+					.contact-button{
+						background-color: rgba(255, 98, 0, 1);
+						padding: 24px 30px 25px 25px;
+						&:hover{
+							background-color: #ffffff;
+							color: rgba(255, 98, 0, 1);
+						}
+						i{
+							margin-left: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+main {
+	div.top{
+    position: relative;
+    top: -70px;
+    height: 300px;
+    background-image: url("../images/配管BOX.png");
+    background-size: cover;
+    div.topBG{
+      background-color: rgba(32, 48, 50, 0.5);
+      height: 100%;
+      div.top-wrap{
+        h1{
+          position: relative;
+          top: 170px;
+          font-size: 32px;
+          font-weight: bold;
+          line-height: 1.68;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+	div.article-detail {
+    height: auto;
+    position: relative;
+    top: -70px;
+    margin-bottom: 110px;
+		div.article-path {
+      margin-top: 13px;
+      margin-left: 8.9%;
+			p {
+        color: #008700;
+        font-weight: bold;
+        text-align: left;
+        a {
+          font-weight: normal;
+          margin: 0 10px;
+          color: #253436;
+          font-size: 14px;
+          line-height: 1.35;
+          font-family: Avenir Next;
+          font-style: Regular;
+				}
+			}
+		}
+		div.article-detail-wrap {
+      width: 74%;
+      margin: 0 auto;
+      margin-top: 77px;
+      height: auto;
+      p {
+          font-size: 16px;
+          line-height: 1.68;
+          text-align: left;
+          color: #082335;
+          text-align: left;
+          height: auto;
+				}
+			div.h2-wrap {
+          height: auto;
+        margin-bottom: 80px;
+        h2 {
+          margin-bottom: 40px;
+          border-bottom: 5px solid #008700;
+          padding-bottom: 20px;
+          color: #008700;
+          font-size: 32px;
+          line-height: 1.46;
+          font-weight: bold;
+          text-align: left;
+        }
+				p {
+				}
+			}
+			div.h3-wrap {
+          height: auto;
+        text-align: left;
+				h3 {
+          font-size: 32px;
+          line-height: 1.46;
+          font-weight: bold;
+          text-align: left;
+          margin-bottom: 25px;
+				}
+				p {
+          margin-top: 25px;
+				}
+			}
+			div.h4-wrap {
+          height: auto;
+        h4 {
+          text-align: left;
+          margin-top: 60px;
+          font-size: 18px;
+          line-height: 1.94;
+          color: #082335;
+          font-weight: bold;
+          &::after{
+            content: " ";
+            position: absolute;
+            margin-top: 26px;
+            border-bottom: 5px solid #008700;
+            width: 50px;
+            display: block;
+          }
+        }
+				p {
+          margin-top: 46px;
+        }
+			}
+			div.h5-wrap {
+          height: auto;
+        h5 {
+          text-align: left;
+          margin-top: 40px;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 2.35;
+          margin-bottom: 31px;
+        }
+				p {
+        }
+			}
+		}
+		div.article-controllers {
+      display: flex;
+      width: 74%;
+      justify-content: space-between;
+      margin: 0 auto;
+      margin-top: 85px;
+      height: auto;
+      flex-wrap: wrap;
+      @media screen and (max-width:950px){
+        width: 100%;
+      }
+      @media screen and (max-width:494px){
+        justify-content: center;  
+      }
+			div.pre-controller {
+        display: flex;
+        @media screen and (max-width:494px){
+          margin-bottom: 20px;
+        }
+				a {
+          display: inline-block;
+          width: 235px;
+          color: #082335;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 1.68;
+          text-align: left;
+				}
+        a.pre-button {
+          color: #008700;
+          font-weight: bold;
+          text-align: left;
+          width: 5px;
+          margin-right: 12.8px;
+        }
+			}
+			div.next-controller {
+        a.next-button{
+          color: #008700;
+          font-weight: bold;
+        }
+        a {
+          width: 235px;
+          color: #082335;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 1.68;
+        }
+			}
+		}
+	}
+  div.contact {
+    background-image: url("../images/フッターCTA_背景@.png");
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    height: 312px;
+    @media screen and (max-width:451px){
+      height: 400px;
+    }
+    div.contactBG{
+      background-color: rgba(29, 37, 41, 0.9);
+      background-size: cover;
+      width: 480px;
+      height: 80%;
+      margin: 0 auto;
+      align-items: center;
+      position: relative;
+      top: 30px;
+      @media screen and (max-width:480px){
+        width: 100%;
+      }
+      display: flex;
+      div.contact-wrap {
+        height: auto;
+        align-items: center;
+        position: relative;
+        // top: 32px;
+        h2 {
+          font-family:  "游ゴシック体","Yu Gothic";
+          font-weight: bold;
+          font-size: 24px;
+          color: rgba(255, 255, 255, 1);
+          @media screen and (max-width:362px){
+            width: 70%;
+            margin: 0 auto;
+          }
+        }
+        p {
+          line-height: 27px;
+          width: 81.87%;
+          margin: 0 auto;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          font-family:  "游ゴシック体","Yu Gothic";
+          color: rgba(255, 255, 255, 1);
+          font-size: 16px;
+          margin-bottom: 40px;
+        }
+        a.contact-button {
+          font-family:  "游ゴシック体","Yu Gothic";
+          background-color: #FF6200;
+          color: #FFFFFF;
+          padding: 17.35px 70px 16.65px 68px;
+          &:hover{
+          background-color: #ffffff;
+          color: rgba(255, 98, 0, 1);
+        }
+          i{
+            margin-left: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  div.footer-wrap {
+    height: 169px;
+    display: flex;
+    align-items: center;
+      @media screen and(max-width:1215px){
+        display: flex;
+        justify-content: center;
+      }
+      div.company-logo {
+      img {
+        padding-left: 115px;
+        @media screen and(max-width:1215px){
+          padding: 0;
+          margin-left: 30px;
+          width: 90%;
+        }
+      }
+      p {
+        color: rgba(30, 45, 47, 1);
+        margin-left: 75px;
+        line-height: 24px;
+        font-size: 14px;
+        @media screen and(max-width:1215px){
+          margin: 0;
+        }
+      }
+    }
+    nav {
+      margin-left: 66px;
+      width: 100%;
+      margin-right: 115px;
+      @media screen and (max-width:1215px){
+        display: none;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          // margin-right: 40px;
+          display: inline-block;
+          a {
+            color: rgba(30, 45, 47, 1);
+          }
+        }
+      }
+    }
+  }
+  div.copyright {
+    border-top: 1px dotted #000;
+    height: 33px;
+    p {
+      line-height: 33px;
+      font-size: 12px;
+      font-family: serif;
+      font-weight: normal;
+    }
+  }
+}

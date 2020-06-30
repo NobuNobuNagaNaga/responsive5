@@ -1,0 +1,204 @@
+*{
+  text-align: center;
+  text-decoration: none;
+	font-family: "游ゴシック体","Yu Gothic";
+}
+main {
+	div.top{
+    position: relative;
+    // top: -70px;
+    height: 300px;
+    background-image: url("../images/配管BOX.png");
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    div.topBG{
+      background-color: rgba(32, 48, 50, 0.5);
+      height: 100%;
+      img{
+        display: flex;
+        padding-left: 10.5%;
+        padding-top: 1%;
+        // width: 19%;
+        height: 53px;
+      }
+      div.top-wrap{
+        h1{
+          position: relative;
+          top: 106.5px;
+          font-size: 32px;
+          font-weight: bold;
+          line-height: 1.68;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+	div.contact-form {
+    margin-top: 80px;
+    height: auto;
+        /* Chrome */
+    ::-webkit-input-placeholder {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.68;
+      letter-spacing: 1.6px;
+      color: rgba(37, 52, 54, 0.15);
+      position: relative;
+      left: 20px;
+    }
+
+    /* Firefox */
+    ::-moz-placeholder {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.68;
+      letter-spacing: 1.6px;
+      color: rgba(37, 52, 54, 0.15);
+      position: relative;
+      left: 20px;
+    }
+
+    /* IE */
+    :-ms-input-placeholder {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.68;
+      letter-spacing: 1.6px;
+      color: rgba(37, 52, 54, 0.15);
+      position: relative;
+      left: 20px;
+    }
+    height: 893px;
+		div.contact-form-wrap {
+			form {
+        display: flex;
+        flex-direction: column;
+				label {
+          color: rgba(37, 52, 54, 1);
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 1.68;
+          letter-spacing: 1.6px;
+          text-align: left;
+          width: 600px;
+          @media screen and (max-width:600px){
+            width: 100%;
+          }
+          margin: 0 auto;
+          margin-bottom: 10px;
+          margin-top: 25px;
+				}
+				input {
+          border: 1px dotted rgba(37, 52, 54, 1);
+          border-radius: 5px;
+          text-align: left;
+          display: inline-block;
+          width: 600px;
+          @media screen and (max-width:600px){
+            width: 96%;
+          }
+          margin: 0 auto;
+          height: 48px;
+				}
+        
+        /*============================
+        #comment
+        ============================*/
+				textarea#comment {
+          border: 1px dotted rgba(37, 52, 54, 1);
+          border-radius: 5px;
+          display: inline-block;
+          width: 600px;
+          @media screen and (max-width:600px){
+            width: 96%;
+          }
+          height: 240px;
+          margin: 0 auto;
+          resize: none;
+          text-align: left;
+          // min-width: 250px;
+          max-width: 600px;
+          // min-height: 100px;
+          max-height: 240px;
+        }
+        .submit-button{
+          background-color: rgba(37, 52, 54, 1);
+          width: 260px;
+          height: 50px;
+          border-radius: 0;
+          text-align: center;
+          color: rgba(255, 255, 255, 1);
+          font-size: 16px;
+          line-height: 1.68;
+          font-weight: bold;
+          margin-top: 40px;
+          &:hover{
+            background-color: rgba(0, 135, 0, 1);
+          }
+        }
+			}
+		}
+	}
+}
+footer {
+  div.footer-wrap {
+    height: 169px;
+    display: flex;
+    align-items: center;
+      @media screen and(max-width:1215px){
+        display: flex;
+        justify-content: center;
+      }
+      div.company-logo {
+      img {
+        padding-left: 115px;
+        @media screen and(max-width:1215px){
+          padding: 0;
+          margin-left: 30px;
+          width: 90%;
+        }
+      }
+      p {
+        color: rgba(30, 45, 47, 1);
+        margin-left: 75px;
+        line-height: 24px;
+        font-size: 14px;
+        @media screen and(max-width:1215px){
+          margin: 0;
+        }
+      }
+    }
+    nav {
+      display: none;
+      margin-left: 66px;
+      width: 100%;
+      margin-right: 115px;
+      @media screen and (max-width:1215px){
+        display: none;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          // margin-right: 40px;
+          display: inline-block;
+          a {
+            color: rgba(30, 45, 47, 1);
+          }
+        }
+      }
+    }
+  }
+  div.copyright {
+    border-top: 1px dotted #000;
+    height: 33px;
+    p {
+      line-height: 33px;
+      font-size: 12px;
+      font-family: serif;
+      font-weight: normal;
+    }
+  }
+}

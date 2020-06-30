@@ -1,0 +1,427 @@
+@charset "UTF-8";
+* {
+  text-align: center;
+  text-decoration: none;
+  font-family: "游ゴシック体","Yu Gothic";
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header div.header-wrap {
+  position: relative;
+  z-index: 100;
+  width: 1050px;
+  margin: 0 auto;
+  background-color: rgba(37, 52, 54, 0.9);
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+  header div.header-wrap {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+header div.header-wrap img {
+  justify-content: flex-start;
+  position: relative;
+  top: -3px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+  header div.header-wrap img {
+    margin-left: 0;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header div.header-wrap img {
+    display: flex;
+  }
+}
+
+header div.header-wrap nav {
+  height: 100%;
+  position: relative;
+  left: 122px;
+}
+
+@media screen and (max-width: 1050px) {
+  header div.header-wrap nav {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header div.header-wrap nav {
+    display: none;
+  }
+}
+
+header div.header-wrap nav ul li {
+  display: inline-block;
+}
+
+header div.header-wrap nav ul li a {
+  line-height: 70px;
+  padding: 15px 0;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 25.31px;
+  font-size: 14px;
+}
+
+header div.header-wrap nav ul li .information-button {
+  color: #008700;
+}
+
+header div.header-wrap nav ul li .information-button::after {
+  content: "";
+  position: absolute;
+  left: 366px;
+  bottom: 0;
+  border-bottom: 10px solid #008700;
+  width: 96px;
+}
+
+header div.header-wrap nav ul li .contact-button {
+  background-color: #ff6200;
+  padding: 24px 30px 25px 25px;
+}
+
+header div.header-wrap nav ul li .contact-button:hover {
+  background-color: #ffffff;
+  color: #ff6200;
+}
+
+header div.header-wrap nav ul li .contact-button i {
+  margin-left: 12px;
+}
+
+main div.top {
+  position: relative;
+  top: -70px;
+  height: 300px;
+  background-image: url("../images/配管BOX.png");
+  background-size: cover;
+}
+
+main div.top div.topBG {
+  background-color: rgba(32, 48, 50, 0.5);
+  height: 100%;
+}
+
+main div.top div.topBG div.top-wrap h1 {
+  position: relative;
+  top: 170px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.68;
+  color: white;
+}
+
+main div.articles {
+  height: auto;
+}
+
+main div.articles div.articles-wrap {
+  width: 1055px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1055px) {
+  main div.articles div.articles-wrap {
+    width: 100%;
+    height: auto;
+  }
+}
+
+main div.articles div.articles-wrap div.article {
+  height: 90.18px;
+  border-bottom: 1px dotted #1E2D2F;
+  margin-bottom: 31px;
+}
+
+@media screen and (max-width: 920px) {
+  main div.articles div.articles-wrap div.article {
+    width: 94%;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  main div.articles div.articles-wrap div.article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+main div.articles div.articles-wrap div.article p {
+  text-align: left;
+  font-size: 16px;
+  color: #1E2D2F;
+  line-height: 1.68;
+  width: 281px;
+}
+
+main div.articles div.articles-wrap div.article p span {
+  background-color: #008700;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.71;
+  padding: 3px 28px 3px 28px;
+  height: auto;
+  width: 125px;
+  margin-left: 15px;
+}
+
+main div.articles div.articles-wrap div.article h2 {
+  text-align: left;
+  position: relative;
+  margin-top: 20px;
+  padding-left: 13px;
+  width: 1035px;
+  height: 20px;
+}
+
+@media screen and (max-width: 1035px) {
+  main div.articles div.articles-wrap div.article h2 {
+    width: 94%;
+    height: auto;
+  }
+}
+
+main div.articles div.articles-wrap div.article h2 a {
+  color: #1E2D2F;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+main div.articles div.articles-index {
+  margin-top: 67.82px;
+  margin-bottom: 160px;
+}
+
+main div.articles div.articles-index ul {
+  display: flex;
+  justify-content: center;
+}
+
+main div.articles div.articles-index ul li a.articles-index-pre {
+  margin: 0 12px;
+  color: #008700;
+}
+
+main div.articles div.articles-index ul li a.articles-index-1 {
+  font-family: "Avenir Next";
+  color: #253436;
+  font-size: 14px;
+  line-height: 1.35;
+  margin: 0 12px;
+}
+
+main div.articles div.articles-index ul li a.articles-index-2 {
+  font-family: "Avenir Next";
+  color: #253436;
+  font-size: 14px;
+  line-height: 1.35;
+  background-color: #008700;
+  margin: 0 12px;
+  color: #ffffff;
+  border-radius: 100%;
+  padding: 4px 8px 3px 8px;
+}
+
+main div.articles div.articles-index ul li a.articles-index-3 {
+  font-family: "Avenir Next";
+  color: #253436;
+  font-size: 14px;
+  line-height: 1.35;
+  margin: 0 12px;
+}
+
+main div.articles div.articles-index ul li a.articles-index-4 {
+  font-family: "Avenir Next";
+  color: #253436;
+  font-size: 14px;
+  line-height: 1.35;
+  margin: 0 12px;
+}
+
+main div.articles div.articles-index ul li a.articles-index-5 {
+  font-family: "Avenir Next";
+  color: #253436;
+  font-size: 14px;
+  line-height: 1.35;
+  margin: 0 12px;
+}
+
+main div.articles div.articles-index ul li a.articles-index-next {
+  margin: 0 12px;
+  color: #008700;
+}
+
+main div.contact {
+  background-image: url("../images/フッターCTA_背景@.png");
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  height: 312px;
+}
+
+@media screen and (max-width: 451px) {
+  main div.contact {
+    height: 400px;
+  }
+}
+
+main div.contact div.contactBG {
+  background-color: rgba(29, 37, 41, 0.9);
+  background-size: cover;
+  width: 480px;
+  height: 80%;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+  top: 30px;
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  main div.contact div.contactBG {
+    width: 100%;
+  }
+}
+
+main div.contact div.contactBG div.contact-wrap {
+  height: auto;
+  align-items: center;
+  position: relative;
+}
+
+main div.contact div.contactBG div.contact-wrap h2 {
+  font-family: "游ゴシック体","Yu Gothic";
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+@media screen and (max-width: 362px) {
+  main div.contact div.contactBG div.contact-wrap h2 {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+main div.contact div.contactBG div.contact-wrap p {
+  line-height: 27px;
+  width: 81.87%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "游ゴシック体","Yu Gothic";
+  color: white;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+main div.contact div.contactBG div.contact-wrap a.contact-button {
+  font-family: "游ゴシック体","Yu Gothic";
+  background-color: #FF6200;
+  color: #FFFFFF;
+  padding: 17.35px 70px 16.65px 68px;
+}
+
+main div.contact div.contactBG div.contact-wrap a.contact-button:hover {
+  background-color: #ffffff;
+  color: #ff6200;
+}
+
+main div.contact div.contactBG div.contact-wrap a.contact-button i {
+  margin-left: 13px;
+}
+
+footer div.footer-wrap {
+  height: 169px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+footer div.footer-wrap div.company-logo img {
+  padding-left: 115px;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap div.company-logo img {
+    padding: 0;
+    margin-left: 30px;
+    width: 90%;
+  }
+}
+
+footer div.footer-wrap div.company-logo p {
+  color: #1e2d2f;
+  margin-left: 75px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap div.company-logo p {
+    margin: 0;
+  }
+}
+
+footer div.footer-wrap nav {
+  margin-left: 66px;
+  width: 100%;
+  margin-right: 115px;
+}
+
+@media screen and (max-width: 1215px) {
+  footer div.footer-wrap nav {
+    display: none;
+  }
+}
+
+footer div.footer-wrap nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div.footer-wrap nav ul li {
+  display: inline-block;
+}
+
+footer div.footer-wrap nav ul li a {
+  color: #1e2d2f;
+}
+
+footer div.copyright {
+  border-top: 1px dotted #000;
+  height: 33px;
+}
+
+footer div.copyright p {
+  line-height: 33px;
+  font-size: 12px;
+  font-family: serif;
+  font-weight: normal;
+}
